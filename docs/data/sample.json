@@ -1,0 +1,119 @@
+{
+  "id": "sample",
+  "name": "範例題庫",
+  "yearPrefix": "",
+  "topics": ["心電圖", "心臟衰竭", "心包膜疾病", "藥理"],
+  "questions": [
+    {
+      "id": "sample-1",
+      "year": 2026,
+      "exam": "範例題",
+      "no": 1,
+      "topic": "心電圖",
+      "stem": "12 導程心電圖中，下壁心肌梗塞的 ST 段上升主要出現在哪一組導程？",
+      "options": {
+        "A": "V1–V4",
+        "B": "I、aVL、V5–V6",
+        "C": "II、III、aVF",
+        "D": "V7–V9",
+        "E": "aVR"
+      },
+      "answer": "C",
+      "explanation": {
+        "quick": "下壁看 **II、III、aVF**，最常見的肇因血管是右冠狀動脈（RCA）。",
+        "background": "常用的心電圖分區：\n前壁／前中膈：V1–V4（LAD）\n側壁：I、aVL、V5–V6（LCx 或 LAD 分支）\n下壁：II、III、aVF（多為 RCA）\n後壁：V7–V9，或 V1–V3 出現對應性 ST 下降。",
+        "options": {
+          "A": "前壁／前中膈，多為 LAD。",
+          "B": "側壁。",
+          "C": "正確：下壁。",
+          "D": "後壁導程。",
+          "E": "aVR 的 ST 上升可見於左主幹或多支血管病變，不代表下壁。"
+        },
+        "sources": ["範例來源：請填入教科書章節或指引名稱"]
+      }
+    },
+    {
+      "id": "sample-2",
+      "year": 2026,
+      "exam": "範例題",
+      "no": 2,
+      "topic": "藥理",
+      "stem": "下列 ACE 抑制劑的副作用中，何者主要與緩激肽（bradykinin）堆積有關？",
+      "options": {
+        "A": "高血鉀",
+        "B": "乾咳",
+        "C": "腎絲球過濾率下降",
+        "D": "低血壓"
+      },
+      "answer": "B",
+      "explanation": {
+        "quick": "ACE 同時負責分解緩激肽，被抑制後緩激肽堆積 → **乾咳**（血管性水腫也是同一機轉）。",
+        "options": {
+          "A": "醛固酮減少所致。",
+          "B": "正確。",
+          "C": "出球小動脈擴張、腎絲球內壓下降所致。",
+          "D": "血管收縮素 II 減少所致。"
+        }
+      }
+    },
+    {
+      "id": "sample-3",
+      "year": 2025,
+      "exam": "範例題",
+      "no": 1,
+      "topic": "心包膜疾病",
+      "stem": "下列何者「不屬於」心包填塞的 Beck 三聯徵（Beck's triad）？",
+      "options": {
+        "A": "低血壓",
+        "B": "頸靜脈怒張",
+        "C": "心音遙遠",
+        "D": "奇脈（pulsus paradoxus）"
+      },
+      "answer": "D",
+      "explanation": {
+        "quick": "Beck 三聯徵＝低血壓＋頸靜脈怒張＋心音遙遠；奇脈是心包填塞的常見表現，但不在三聯徵內。"
+      }
+    },
+    {
+      "id": "sample-4",
+      "year": 2025,
+      "exam": "範例題",
+      "no": 2,
+      "topic": "心臟衰竭",
+      "stem": "（格式示範：一題有兩個答案都給分）下列何者是已證實可降低射出分率減少型心衰竭（HFrEF）死亡率的藥物？",
+      "options": {
+        "A": "digoxin",
+        "B": "spironolactone",
+        "C": "furosemide",
+        "D": "dapagliflozin",
+        "E": "amlodipine"
+      },
+      "answer": ["B", "D"],
+      "explanation": {
+        "quick": "MRA（spironolactone）與 SGLT2 抑制劑（dapagliflozin）都屬於 HFrEF 的核心治療；這題用來示範「answer 填多個字母＝選其中任一個都算對」。",
+        "options": {
+          "A": "可減少住院，但不降低死亡率。",
+          "B": "正確：MRA。",
+          "C": "緩解鬱血症狀，未證實降低死亡率。",
+          "D": "正確：SGLT2 抑制劑。",
+          "E": "對 HFrEF 預後為中性。"
+        }
+      }
+    },
+    {
+      "id": "sample-5",
+      "year": 2024,
+      "exam": "範例題",
+      "no": 1,
+      "topic": "心電圖",
+      "stem": "（格式示範：尚未寫詳解的題目）心電圖紙上，標準走速 25 mm/s 時，一小格（1 mm）代表多少時間？",
+      "options": {
+        "A": "0.02 秒",
+        "B": "0.04 秒",
+        "C": "0.10 秒",
+        "D": "0.20 秒"
+      },
+      "answer": "B"
+    }
+  ]
+}

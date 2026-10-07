@@ -1,0 +1,7 @@
+{
+  "title": "我的題庫",
+  "subtitle": "歷屆考題 · 線上作答 · 詳解",
+  "banks": [
+    { "id": "sample", "name": "範例題庫（請替換成你的題目）", "file": "sample.json" }
+  ]
+}

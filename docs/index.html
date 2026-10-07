@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>我的題庫</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <header class="hd">
+    <h1 id="title">我的題庫</h1>
+    <p id="subtitle"></p>
+  </header>
+
+  <div class="bar">
+    <select id="bank" aria-label="選擇題庫" hidden></select>
+    <div class="tabs" role="tablist">
+      <button class="tab on" data-view="year" role="tab">分年</button>
+      <button class="tab" data-view="topic" role="tab">分主題</button>
+      <button class="tab" data-view="shuffle" role="tab">隨機</button>
+    </div>
+  </div>
+
+  <div class="ctrl">
+    <select id="fYear" aria-label="年度"><option value="">全部年度</option></select>
+    <select id="fTopic" aria-label="主題"><option value="">全部主題</option></select>
+    <select id="fStatus" aria-label="作答狀態">
+      <option value="">全部題目</option>
+      <option value="todo">未作答</option>
+      <option value="wrong">錯題本</option>
+      <option value="right">已答對</option>
+    </select>
+    <input id="fKw" type="search" placeholder="搜尋題幹或選項…" aria-label="關鍵字">
+  </div>
+  <div class="ctrl">
+    <button class="btn" id="expandBtn">全部展開詳解</button>
+    <button class="btn warn" id="resetBtn">重置進度</button>
+  </div>
+
+  <div id="stats" class="stats"></div>
+  <div id="count" class="count"></div>
+  <main id="list"></main>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
