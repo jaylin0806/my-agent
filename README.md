@@ -1,6 +1,6 @@
 # 兒科專科醫師筆試題庫
 
-目前收錄臺灣兒科醫學會 110–113 年度兒科專科醫師筆試甄審試題（A 卷）共 400 題，附官方公告答案，並依次專科分成 15 個主題。題目由醫學會公告的 Word 檔轉出，答案與選項文字皆已逐題和原檔比對。尚未撰寫詳解。
+目前收錄臺灣兒科醫學會 110–113 年度兒科專科醫師筆試甄審試題（A 卷）共 400 題，附官方公告答案，並依次專科分成 15 個主題。題目由醫學會公告的 Word 檔轉出，答案與選項文字皆已逐題和原檔比對。心臟主題 30 題已有詳解（AI 草擬、標示為待審閱），其餘題目尚未撰寫。
 
 這是一個免伺服器、免資料庫的線上題庫。題目存成 JSON，網頁用純 HTML／CSS／JavaScript 寫成，可以免費放上 GitHub Pages，也能用 iframe 嵌進 WordPress 或其他網站。
 
@@ -29,6 +29,8 @@ tools/
   csv2json.py         ← Excel/CSV 轉題庫 JSON
   template.csv        ← CSV 範本
   validate.py         ← 檢查題庫格式
+  merge_explanations.py ← 把詳解檔合併進題庫
+  explanations/       ← 詳解原稿（每個主題一個檔案，方便審閱修改）
 ```
 
 ## 在自己電腦預覽
@@ -101,6 +103,16 @@ python3 -m http.server 8000 -d docs
 - `answer` 可以是 `"B"`，或 `["A", "C"]`（任一個都算對）
 - 送分題加上 `"void": true`
 - 沒有 `explanation` 的題目會顯示「詳解撰寫中…」
+
+### 撰寫與審閱詳解
+
+詳解原稿放在 `tools/explanations/`，以題目 id 對應。修改後重新合併：
+
+```bash
+python3 tools/merge_explanations.py docs/data/peds.json tools/explanations/peds-cardio.json --draft
+```
+
+`--draft` 會在網頁上顯示「AI 草擬、尚待審閱」提示；審閱完成後拿掉 `--draft` 再合併一次即可移除。
 
 改完一定要跑一次 `python3 tools/validate.py`，它會指出缺欄位、答案不在選項中、id 重複、找不到圖片等問題。
 

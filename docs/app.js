@@ -205,6 +205,7 @@ function explanationHtml(q) {
   if (!ex) return '<div class="pending">詳解撰寫中…</div>';
   const right = answersOf(q);
   let h = '';
+  if (ex.draft) h += '<div class="draft">⚠️ 此詳解為 AI 草擬，尚待醫師審閱，請以教科書與最新指引為準。</div>';
   if (ex.quick) h += `<div class="box quick"><b>⚡ 快速解答：</b>${fmt(ex.quick)}</div>`;
   if (ex.background) h += `<div class="box bg"><h4>📖 背景知識</h4>${fmt(ex.background)}</div>`;
   if (ex.options && Object.keys(ex.options).length) {
