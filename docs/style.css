@@ -15,7 +15,7 @@
   --info-soft: #eef4ff;
 }
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --bg: #0f1115;
     --card: #181b21;
     --text: #e6e8eb;
@@ -30,7 +30,25 @@
     --warn: #fbbf24;
     --warn-soft: #2e2510;
     --info-soft: #172036;
+    color-scheme: dark;
   }
+}
+:root[data-theme="dark"] {
+  --bg: #0f1115;
+  --card: #181b21;
+  --text: #e6e8eb;
+  --muted: #9aa3af;
+  --line: #2a2f38;
+  --accent: #7aa2ff;
+  --accent-soft: #1c2742;
+  --ok: #4ade80;
+  --ok-soft: #12301f;
+  --bad: #f87171;
+  --bad-soft: #3a1717;
+  --warn: #fbbf24;
+  --warn-soft: #2e2510;
+  --info-soft: #172036;
+  color-scheme: dark;
 }
 
 * { box-sizing: border-box; }
@@ -73,6 +91,8 @@ button, select, input { font: inherit; color: inherit; }
 .tab.on { background: var(--accent); border-color: var(--accent); color: #fff; }
 .btn { border-color: var(--accent); color: var(--accent); }
 .btn.warn { border-color: var(--bad); color: var(--bad); }
+.btn.warn.armed { background: var(--bad); color: var(--card); }
+.tab:focus-visible, .btn:focus-visible, .opt:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 select, input {
   padding: 7px 10px;
   border: 1px solid var(--line);

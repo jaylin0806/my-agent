@@ -143,9 +143,26 @@ function bindControls() {
     document.querySelectorAll('.toggle').forEach((b) => { b.textContent = toggleText(!state.expandAll); });
   };
 
-  $('#resetBtn').onclick = () => {
+  // 兩段式確認：第一次按下改成確認狀態，4 秒內再按一次才清除
+  // （不用 confirm()，因為部分嵌入環境會直接擋掉對話框）
+  let resetTimer = null;
+  $('#resetBtn').onclick = function () {
     if (!state.bank) return;
-    if (!confirm(`確定要清除「${state.bank.name}」的所有作答紀錄嗎？此動作無法復原。`)) return;
+    if (!resetTimer) {
+      this.textContent = '再按一次確認清除';
+      this.classList.add('armed');
+      resetTimer = setTimeout(() => {
+        resetTimer = null;
+        this.textContent = '重置進度';
+        this.classList.remove('armed');
+      }, 4000);
+      return;
+    }
+    clearTimeout(resetTimer);
+    resetTimer = null;
+    this.textContent = '已清除';
+    this.classList.remove('armed');
+    setTimeout(() => { this.textContent = '重置進度'; }, 1500);
     state.progress = {};
     saveProgress();
     render();
