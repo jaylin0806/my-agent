@@ -1,7 +1,7 @@
 {
-  "title": "我的題庫",
-  "subtitle": "歷屆考題 · 線上作答 · 詳解",
+  "title": "兒科專科醫師筆試題庫",
+  "subtitle": "臺灣兒科醫學會 110–113 年度筆試甄審試題 · 線上作答",
   "banks": [
-    { "id": "sample", "name": "範例題庫（請替換成你的題目）", "file": "sample.json" }
+    { "id": "peds", "name": "兒科專科醫師筆試（110–113 年）", "file": "peds.json" }
   ]
 }

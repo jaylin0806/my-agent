@@ -1,6 +1,8 @@
-# 我的題庫
+# 兒科專科醫師筆試題庫
 
-一個免伺服器、免資料庫的線上題庫。題目存成 JSON，網頁用純 HTML／CSS／JavaScript 寫成，可以免費放上 GitHub Pages，也能用 iframe 嵌進 WordPress 或其他網站。
+目前收錄臺灣兒科醫學會 110–113 年度兒科專科醫師筆試甄審試題（A 卷）共 400 題，附官方公告答案，並依次專科分成 15 個主題。題目由醫學會公告的 Word 檔轉出，答案與選項文字皆已逐題和原檔比對。尚未撰寫詳解。
+
+這是一個免伺服器、免資料庫的線上題庫。題目存成 JSON，網頁用純 HTML／CSS／JavaScript 寫成，可以免費放上 GitHub Pages，也能用 iframe 嵌進 WordPress 或其他網站。
 
 功能：
 - 分年、分主題、隨機出題三種檢視
@@ -20,7 +22,8 @@ docs/                 ← 網站本體（GitHub Pages 從這裡發布）
   app.js
   data/
     banks.json        ← 題庫清單
-    sample.json       ← 範例題庫（換成你的題目）
+    peds.json         ← 兒科專科筆試 110–113 年（400 題）
+    sample.json       ← 格式範例（含詳解寫法，未列在 banks.json）
   img/                ← 題目附圖
 tools/
   csv2json.py         ← Excel/CSV 轉題庫 JSON
@@ -69,11 +72,11 @@ python3 -m http.server 8000 -d docs
    python3 tools/validate.py
    ```
 
-   會產生 `docs/data/cardio.json`，並自動加進 `banks.json`。確認不需要範例題庫後，把 `banks.json` 裡的 `sample` 那筆刪掉即可。
+   會產生 `docs/data/cardio.json`，並自動加進 `banks.json`。
 
 ### 方法二：直接編輯 JSON
 
-參考 `docs/data/sample.json` 的格式：
+參考 `docs/data/sample.json` 的格式（詳解的完整寫法在這個檔案裡）：
 
 ```json
 {
