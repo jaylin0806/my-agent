@@ -5060,7 +5060,23 @@
     "D": "輸液一次給予生理食鹽水1000 ml, 十分鐘內給完",
     "E": "廣效型抗生素最晚不超過6小時內給予"
    },
-   "answer": "A"
+   "answer": "A",
+   "explanation": {
+    "quick": "發燒、低血壓、意識混亂、呼吸淺快——**敗血性休克合併意識改變**，需保護呼吸道，以**快速順序插管**放置氣管內管。",
+    "background": "Nelson 第 85、79 章（依 Surviving Sepsis Campaign 2020）：\n• 一小時內完成：建立靜脈或骨內管路、血液培養、**廣效抗生素（1 小時內）**、測乳酸、輸液、輸液後仍休克則開始血管活性藥物\n• 輸液：每次 **10–20 mL/kg** 推注（25 公斤約 250–500 mL），每次後重新評估，注意肝腫大與囉音；一次 1000 mL（40 mL/kg）在 10 分鐘內給完太多太快\n• 輸液無效：首選 **epinephrine 或 norepinephrine**（持續滴注），dobutamine 不是首選升壓藥\n• 「每 3–5 分鐘給 epinephrine」是**心跳停止**時的劑量方式，不適用於有脈搏的休克\n• 意識改變、呼吸衰竭或難治性休克者需插管；第 79 章：血行不穩者採快速順序插管，選擇對血壓影響小的鎮靜劑（如 ketamine），並準備好輸液與升壓劑",
+    "options": {
+     "A": "正確。",
+     "B": "錯誤：這是心跳停止時的給藥方式。",
+     "C": "錯誤：輸液無效時首選 epinephrine 或 norepinephrine。",
+     "D": "錯誤：應每次 10–20 mL/kg 並反覆評估。",
+     "E": "錯誤：應在 1 小時內給予抗生素。"
+    },
+    "sources": [
+     "Nelson Textbook of Pediatrics 22e：Ch.85 Shock，Fig. 85.2 SSC Initial Resuscitation Algorithm（p.606–608）",
+     "Nelson Textbook of Pediatrics 22e：Ch.79 Pediatric Cardiorespiratory Emergencies，Airway management（p.559）"
+    ],
+    "draft": true
+   }
   },
   {
    "id": "111-62",
@@ -5076,7 +5092,22 @@
     "D": "對於不會說話的嬰幼兒，持續哭泣但可以安撫，語言此項為3分",
     "E": "對聲音沒反應，給予疼痛刺激才張眼，張眼(eye opening)此項為2"
    },
-   "answer": "D"
+   "answer": "D",
+   "explanation": {
+    "quick": "不會說話的嬰幼兒，「**哭鬧但可安撫**」語言給 **4 分**；「**無法安撫的哭鬧**」才是 3 分。",
+    "background": "Nelson 第 79 章：\n• **AVPU**（Alert、Verbal、Pain、Unresponsive）：依對刺激的反應評分，**不受發展程度影響**——孩子不需要聽懂語言或遵從指令，只要對刺激有反應\n• **改良式兒童 GCS**（Table 79.3），滿分 15 分（E4 V5 M6）：\n  – 張眼：自發 4、對聲音 3、**對壓力（疼痛）2**、無 1\n  – 語言（< 2 歲）：咿呀或與年齡相符的字句 5、部分字句不符年齡 4、**無法安撫的哭鬧 3**、只有聲音 2、無 1\n  – 動作（< 2 歲）：正常自發動作 6、刺激時快速縮回 5、正常屈曲 4、**異常屈曲 3**、伸直 2、無 1",
+    "options": {
+     "A": "正確。",
+     "B": "正確。",
+     "C": "正確。",
+     "D": "錯誤（本題答案）：可安撫的哭鬧為 4 分。",
+     "E": "正確。"
+    },
+    "sources": [
+     "Nelson Textbook of Pediatrics 22e：Ch.79 Pediatric Cardiorespiratory Emergencies，Table 79.2 AVPU 與 Table 79.3 Modified Pediatric GCS（p.555–556）"
+    ],
+    "draft": true
+   }
   },
   {
    "id": "111-63",
@@ -5092,7 +5123,22 @@
     "D": "安排胸部X光檢查，並嚴密監測其生命徵象",
     "E": "先給予口服抗生素amoxicillin回家，再密切觀察"
    },
-   "answer": "E"
+   "answer": "E",
+   "explanation": {
+    "quick": "發燒、喉嚨痛後出現**吞嚥困難、頸部無法轉動**——要懷疑**咽後膿瘍**等深頸部感染，需住院靜脈抗生素，**不能**只給口服 amoxicillin 回家。",
+    "background": "Nelson 第 432 章（咽後膿瘍、側咽膿瘍）：\n• 好發於 5 歲以下（咽後淋巴結在幼兒較明顯）\n• 表現不具特異性：發燒、躁動、進食減少、流口水；**頸部僵硬、斜頸、不願轉動頸部**；會說話的孩子會說喉嚨痛與頸痛；也可能聲音含糊、喘鳴、呼吸窘迫\n• 檢查：**側頸 X 光**可見咽後軟組織增厚；**CT** 可確認膿瘍並評估範圍\n• 治療：**靜脈抗生素**（如 ampicillin-sulbactam 或 **clindamycin**），會診耳鼻喉或外科；> 50% 可只用抗生素治療成功，有呼吸窘迫或治療無效時需引流\n• 併發症：上呼吸道阻塞（必要時插管）、膿瘍破裂吸入、**縱膈腔炎**（胸部 X 光評估）、頸靜脈血栓",
+    "options": {
+     "A": "適當。",
+     "B": "適當。",
+     "C": "適當。",
+     "D": "適當：評估縱膈腔擴散與肺部併發症。",
+     "E": "最不適當（本題答案）。"
+    },
+    "sources": [
+     "Nelson Textbook of Pediatrics 22e：Ch.432 Retropharyngeal Abscess, Lateral Pharyngeal (Parapharyngeal) Abscess, and Peritonsillar Cellulitis/Abscess（p.2566）"
+    ],
+    "draft": true
+   }
   },
   {
    "id": "111-64",
@@ -5108,7 +5154,22 @@
     "D": "類固醇的療效是很明確的，即使是輕症使用口服類固醇治療也有好處",
     "E": "大多數的研究建議使用dexamethasone 0.6mg/kg，但低劑量0.15mg/kg也可能有效"
    },
-   "answer": "B"
+   "answer": "B",
+   "explanation": {
+    "quick": "目前證據顯示 **racemic epinephrine 和 L-epinephrine 的療效與安全性沒有差別**，B 錯誤。",
+    "background": "Nelson 第 433 章（哮吼）：\n• **噴霧 racemic epinephrine 是中重度哮吼的標準治療**：0.25–0.5 mL 的 2.25% racemic epinephrine 加 3 mL 食鹽水，可每 20 分鐘給一次\n• 最初選 racemic 是為了減少心跳加快等副作用，但**現有證據並不支持 racemic 優於 L-epinephrine（1:1000 溶液 5 mL）**\n• 適應症：休息時中重度喘鳴、可能需要插管、呼吸窘迫或低血氧\n• **作用時間 < 2 小時**，需要觀察；不會造成反彈性惡化；若休息時無喘鳴、已給類固醇、通氣與血氧正常，**觀察 2–3 小時**後可返家\n• **口服類固醇效果明確，輕症也有好處**：多數研究用 dexamethasone 0.6 mg/kg（最多 16 mg），**低至 0.15 mg/kg 也可能一樣有效**；prednisolone 1 mg/kg 不劣於 dexamethasone",
+    "options": {
+     "A": "適當。",
+     "B": "最不適當（本題答案）：兩者效果與安全性相當。",
+     "C": "適當。",
+     "D": "適當。",
+     "E": "適當。"
+    },
+    "sources": [
+     "Nelson Textbook of Pediatrics 22e：Ch.433 Acute Inflammatory Upper Airway Obstruction，Croup Treatment（p.2571）"
+    ],
+    "draft": true
+   }
   },
   {
    "id": "111-65",
@@ -5124,7 +5185,23 @@
     "D": "美國重症醫學會關於敗血性休克(septic shock )的治療指引中指出，在五到十五分鐘要給予每公斤20cc的等張性溶液，並且要矯正低血糖和低血鈣",
     "E": "敗血性休克的病程常合併心肌收縮功能變差，輸液治療後常需要使用強心劑"
    },
-   "answer": "A"
+   "answer": "A",
+   "explanation": {
+    "quick": "兒童最常見的休克是**低容積性休克**（多因腹瀉嘔吐脫水），不是心因性休克。",
+    "background": "Nelson 第 85 章：\n• 五大類休克：低容積性、心因性、阻塞性、分布性、解離性（Table 85.1）\n• **低容積性休克是全世界兒童最常見的休克**，多因腹瀉、嘔吐或出血\n• **心因性休克**：心肌病變、心肌炎、心律不整、先天性心臟病；表現可能是呼吸喘、肝腫大、奔馬律\n• **阻塞性休克**：張力性氣胸、心包膜填塞、肺栓塞、縱膈腔腫瘤、動脈導管依賴型病灶（如嚴重主動脈弓狹窄）——心肌本身收縮正常，但血流受阻\n• **敗血性休克**屬分布性，常合併心肌功能不全，輸液後常需血管活性藥物\n• 輸液：10–20 mL/kg 在 5–10 分鐘內推注；同時矯正**低血糖與低血鈣**",
+    "options": {
+     "A": "最不適當（本題答案）。",
+     "B": "適當。",
+     "C": "適當。",
+     "D": "適當。",
+     "E": "適當。"
+    },
+    "sources": [
+     "Nelson Textbook of Pediatrics 22e：Ch.85 Shock，Table 85.1 與 Volume resuscitation（p.600–606）",
+     "Nelson Textbook of Pediatrics 22e：Ch.79 Pediatric Cardiorespiratory Emergencies（休克分類，p.559）"
+    ],
+    "draft": true
+   }
   },
   {
    "id": "111-66",
@@ -5140,7 +5217,22 @@
     "D": "心肺復甦時，最好在不可電擊心律引起的心臟停止後，5分鐘內給予腎上腺素(epinephrine)",
     "E": "在心跳停止經心肺復甦急救而恢復自發性循環(ROSC)後，若出現癲癇重積狀態均需予以治療"
    },
-   "answer": "C"
+   "answer": "C",
+   "explanation": {
+    "quick": "2020 AHA 指引**不建議常規使用環狀軟骨壓迫**：它不能減少胃內容物逆流，還會妨礙面罩通氣與聲門視野。",
+    "background": "Nelson 第 79 章（依 2020 AHA 兒童 BLS／PALS）：\n• 輔助通氣（有脈搏但呼吸不足、或有進階呼吸道的 CPR）：**每 2–3 秒 1 次（20–30 次/分）**\n• **有氣囊的氣管內管**適用於多數兒童，可減少因漏氣而換管並降低吸入風險；有氣囊的管子應選小 0.5 mm\n• **不建議常規使用環狀軟骨壓迫**\n• 不可電擊心律的心跳停止，**第一劑 epinephrine 應在 5 分鐘內給予**\n• 恢復自發循環（ROSC）後：維持血壓、氧合與體溫控制，**癲癇重積狀態應予治療**；可考慮持續腦波監測",
+    "options": {
+     "A": "正確。",
+     "B": "正確。",
+     "C": "錯誤（本題答案）：不建議例行使用。",
+     "D": "正確。",
+     "E": "正確。"
+    },
+    "sources": [
+     "Nelson Textbook of Pediatrics 22e：Ch.79 Pediatric Cardiorespiratory Emergencies and Resuscitation（p.553–568）"
+    ],
+    "draft": true
+   }
   },
   {
    "id": "111-67",
@@ -5156,7 +5248,22 @@
     "D": "若首次評估新生兒心跳數發現小於100下/分鐘時，應立即進行胸外按壓",
     "E": "若此新生兒需開始進行胸外按壓急救時，換氣速率應為每3次胸外按壓實施一次換氣"
    },
-   "answer": "E"
+   "answer": "E",
+   "explanation": {
+    "quick": "新生兒胸外按壓與通氣比為 **3:1**（每分鐘 90 次按壓、30 次通氣）。",
+    "background": "Nelson 第 123 章（2020 AHA 新生兒急救）：\n• 出生後**先擦乾、保暖、刺激**，同時評估張力、呼吸與心跳\n• 刺激後仍呼吸暫停或心跳 **< 100 次/分 → 正壓通氣**（40–60 次/分），同時在右手放血氧計\n• ≥ 35 週的新生兒**以室內空氣（21%）開始**，再依目標血氧調整，避免高氧傷害\n• 有效通氣 60 秒（含 MRSOPA 矯正步驟與插管）後心跳仍 **< 60 次/分**，才開始**胸外按壓**，並把氧氣調到 100%\n• 按壓位置在胸骨下 1/3，用雙拇指法；**按壓與通氣比 3:1**（每 2 秒 3 次按壓 1 次通氣）\n• Epinephrine：首選**靜脈（臍靜脈）**，1:10,000 溶液 0.01–0.03 mg/kg；氣管內給藥效果較差",
+    "options": {
+     "A": "錯誤：應先擦乾、保暖、擺位與刺激，同時評估。",
+     "B": "錯誤：足月兒以 21% 氧氣開始。",
+     "C": "錯誤：首選靜脈途徑，且濃度為 1:10,000。",
+     "D": "錯誤：心跳 < 100 應先給正壓通氣；有效通氣後 < 60 才按壓。",
+     "E": "正確。"
+    },
+    "sources": [
+     "Nelson Textbook of Pediatrics 22e：Ch.123 Neonatal Resuscitation and Delivery Room Emergencies，Fig. 123.2（p.1070–1071）"
+    ],
+    "draft": true
+   }
   },
   {
    "id": "111-68",
@@ -5172,7 +5279,22 @@
     "D": "四個月以下嬰兒身上任何部位的瘀傷，均要懷疑不當對待",
     "E": "黃色的瘀挫傷，只能判斷這個受傷的發生超過十八小時"
    },
-   "answer": "C"
+   "answer": "C",
+   "explanation": {
+    "quick": "TEN-4 準則針對的是 **4 歲以下**兒童的軀幹、耳朵、頸部瘀傷，不是 5 歲以下。",
+    "background": "Nelson 第 17 章：\n• 瘀傷是身體虐待最常見的表現；可疑特徵：(1) 還不會移動的嬰兒出現瘀傷（只有 2% 的此類嬰兒有瘀傷）、(2) 較少暴露、有脂肪墊保護的部位（臀部、臉頰、耳朵、頸部、生殖器）、(3) 有形狀的瘀傷、(4) 多處新舊不一的瘀傷\n• **TEN-4-FACESp**：**4 歲以下**兒童的軀幹（Torso）、耳朵（Ears）、頸部（Neck）、繫帶、下顎角、臉頰、眼瞼、結膜下出血及有形狀的瘀傷，以及**4 個月以下嬰兒的任何瘀傷**\n• 用顏色推估瘀傷時間的方法早已被推翻，很難精確判斷（一般認為黃色瘀傷至少已超過 18 小時，是官方答案採用的觀點）\n• 身心障礙兒童遭受虐待的風險較高",
+    "options": {
+     "A": "正確。",
+     "B": "正確。",
+     "C": "錯誤（本題答案）：應為 4 歲以下。",
+     "D": "正確。",
+     "E": "正確（依官方答案）：黃色只能說明受傷超過約 18 小時，無法精確推定時間。"
+    },
+    "sources": [
+     "Nelson Textbook of Pediatrics 22e：Ch.17 Abused and Neglected Children（p.115）"
+    ],
+    "draft": true
+   }
   },
   {
    "id": "111-69",
@@ -5188,7 +5310,22 @@
     "D": "代理孟喬森症候群的父母通常比較會不具有醫學知識的背景且通常經濟不佳",
     "E": "代理孟喬森症候群是指小孩常常裝病欺騙父母及醫師"
    },
-   "answer": "C"
+   "answer": "C",
+   "explanation": {
+    "quick": "反覆到多家醫院、檢查都正常，家長仍堅持要做侵襲性檢查——要想到**代理孟喬森症候群（醫療兒虐）**；這類家長常**鼓勵或要求醫師做更多檢查**。",
+    "background": "Nelson 第 17.2 節（Factitious disorder imposed on another：醫療兒虐，Munchausen syndrome by proxy）：\n• 父母（通常是母親）**虛構、誇大或製造**孩子的症狀，導致孩子接受不必要的醫療——屬於**兒童虐待**\n• 方式：虛構病史（如抽搐、呼吸暫停）、直接造成疾病（下毒、悶住口鼻）、竄改檢體或體溫、隱瞞在其他醫院的檢查結果\n• 即使大量檢查找不到診斷，醫師可能以為遇到罕見疾病，無意中配合更多檢查；**從第一次就醫到診斷平均約 2 年**\n• 有醫療背景的家長更能編出可信的病史，但網路也讓一般家長容易取得醫療資訊——不是「不具醫學知識且經濟不佳」\n• 受害者多為嬰幼兒，約 25% 大於 6 歲；兄弟姊妹常也受害；死亡率 6–9%；高達 30% 的受害兒本身確實有疾病\n• 由孩子自己裝病是「孟喬森症候群」或詐病，不是代理孟喬森症候群",
+    "options": {
+     "A": "錯誤：應考慮代理孟喬森症候群。",
+     "B": "錯誤：是兒童虐待的一種。",
+     "C": "正確。",
+     "D": "錯誤：常有醫療相關背景，與社經地位無固定關聯。",
+     "E": "錯誤：是照顧者造假，不是孩子裝病。"
+    },
+    "sources": [
+     "Nelson Textbook of Pediatrics 22e：Ch.17 Abused and Neglected Children，17.2 Factitious Disorder Imposed on Another: Medical Child Abuse（p.127）"
+    ],
+    "draft": true
+   }
   },
   {
    "id": "111-70",
@@ -5204,7 +5341,22 @@
     "D": "眼底檢查如包含一層以上(involve > 1 layer)的視網膜出血，通常是受虐造成",
     "E": "腦部核磁共振影像檢查最好安排在發生後2-4天內"
    },
-   "answer": "E"
+   "answer": "E",
+   "explanation": {
+    "quick": "Nelson 建議**腦部 MRI 最好在急性受傷後 5–7 天**做，不是 2–4 天內。",
+    "background": "Nelson 第 17 章（受虐性頭部外傷，AHT）：\n• AHT 造成顯著的罹病率與死亡率，是兒童虐待致死最重要的原因\n• **硬腦膜下血腫**、多層次且延伸到周邊的**視網膜出血**、腦實質損傷與骨折（尤其肋骨與典型干骺端病灶）同時出現時強烈懷疑 AHT\n• 影像：急性期以 **CT** 評估；**MRI** 可區分腦外積液、推估受傷時間、評估腦實質與血管異常，**最好在急性受傷後 5–7 天**做\n• **熊貓眼（raccoon eyes）**可因拉扯前額頭髮造成帽狀腱膜下血腫或前額受擊（神經母細胞瘤也可有類似表現）\n• 懷疑 AHT 時應由兒童眼科做散瞳眼底檢查；**多處、多層、延伸到周邊**的視網膜出血高度懷疑虐待，視網膜劈裂更是強烈指向虐待",
+    "options": {
+     "A": "正確。",
+     "B": "正確。",
+     "C": "正確。",
+     "D": "正確。",
+     "E": "錯誤（本題答案）：最好在受傷後 5–7 天。"
+    },
+    "sources": [
+     "Nelson Textbook of Pediatrics 22e：Ch.17 Abused and Neglected Children，Abusive head trauma（p.117）"
+    ],
+    "draft": true
+   }
   },
   {
    "id": "111-71",
@@ -5220,7 +5372,23 @@
     "D": "病史前後不一致",
     "E": "二年內超過3次以上急診外傷就醫紀錄"
    },
-   "answer": "E"
+   "answer": "E",
+   "explanation": {
+    "quick": "兒少保護工作手冊的身體虐待簡易篩檢條件是「**一年內**超過 3 次急診外傷就醫」，不是二年內。",
+    "background": "本題依據衛福部《兒少虐待及疏忽－醫事人員工作手冊》的身體虐待通報簡易篩檢標準（Nelson 未涵蓋台灣手冊）：\n• 低處跌落（約 150 公分以下）卻造成顱內損傷或骨折\n• **一歲以下**任何骨折以及頭部外傷\n• 病史與身體檢查不符\n• 病史前後不一致\n• **一年內**超過 3 次急診外傷就醫紀錄\n• 延遲就醫、特殊部位或形狀的傷痕\nNelson 第 17 章的對應觀念：身體虐待的關鍵是**沒有合理的病史**可以解釋傷勢；短距離跌倒很少造成嚴重腦傷；不會走路的嬰兒骨折與瘀傷都應高度懷疑。",
+    "options": {
+     "A": "正確。",
+     "B": "正確。",
+     "C": "正確。",
+     "D": "正確。",
+     "E": "錯誤（本題答案）：應為一年內。"
+    },
+    "sources": [
+     "衛生福利部：兒少虐待及疏忽－醫事人員工作手冊（通報簡易篩檢標準；Nelson 未涵蓋）",
+     "Nelson Textbook of Pediatrics 22e：Ch.17 Abused and Neglected Children（p.115–117）"
+    ],
+    "draft": true
+   }
   },
   {
    "id": "111-72",
@@ -5236,7 +5404,22 @@
     "D": "胸骨骨折",
     "E": "脊柱脫位"
    },
-   "answer": "D"
+   "answer": "D",
+   "explanation": {
+    "quick": "**胸骨骨折**對兒虐有高度特異性。",
+    "background": "Nelson Table 17.3（放射線表現的特異性，最適用於嬰兒）：\n• **高度特異性**：典型干骺端病灶、肋骨骨折（尤其後內側）、肩胛骨骨折、棘突骨折、**胸骨骨折**\n• 中度特異性：多處（尤其雙側）骨折、不同時期的骨折、骨骺分離、**椎體骨折與脫位**、**手指骨折**、複雜性顱骨骨折、骨盆骨折\n• 常見但特異性低：骨膜下新生骨、鎖骨骨折、**長骨骨幹骨折**、**線性顱骨骨折**\n肋骨與胸骨骨折很少由 CPR 造成。",
+    "options": {
+     "A": "錯誤：常見但特異性低。",
+     "B": "錯誤：常見但特異性低。",
+     "C": "錯誤：中度特異性。",
+     "D": "正確。",
+     "E": "錯誤：中度特異性。"
+    },
+    "sources": [
+     "Nelson Textbook of Pediatrics 22e：Ch.17 Abused and Neglected Children，Table 17.3 Specificity of Radiologic Findings（p.118）"
+    ],
+    "draft": true
+   }
   },
   {
    "id": "111-73",
@@ -5252,7 +5435,22 @@
     "D": "建議可手術(surgery)處理",
     "E": "若合併中腸扭結，延遲手術治療可能會導致短腸症候群"
    },
-   "answer": "C"
+   "answer": "C",
+   "explanation": {
+    "quick": "**上消化道攝影是診斷腸迴轉不良的黃金標準**（準確度 ≥ 93%），C 錯誤。",
+    "background": "Nelson 第 376 章（腸迴轉不良）：\n• 中腸在胚胎期旋轉與固定異常；可合併 **Ladd 帶**造成十二指腸阻塞，或發生**中腸扭轉**\n• 典型表現：新生兒或嬰兒突然出現**膽汁性嘔吐**——要立即排除中腸扭轉，屬**外科急症**\n• **上消化道攝影是診斷的黃金標準（≥ 93%）**：十二指腸空腸交界處（DJJ）位於脊椎左側的正常位置以外；扭轉時呈「螺旋狀」\n• 超音波可見上腸繫膜動脈與靜脈位置顛倒、漩渦徵象\n• 治療：**Ladd 手術**；合併扭轉時延遲手術會造成中腸壞死，切除後導致**短腸症候群**甚至死亡",
+    "options": {
+     "A": "正確。",
+     "B": "正確。",
+     "C": "錯誤（本題答案）：上消化道攝影是黃金標準。",
+     "D": "正確。",
+     "E": "正確。"
+    },
+    "sources": [
+     "Nelson Textbook of Pediatrics 22e：Ch.376 Intestinal Atresia, Stenosis, and Malrotation，Malrotation（p.2284–2286）"
+    ],
+    "draft": true
+   }
   },
   {
    "id": "111-74",
@@ -5268,7 +5466,22 @@
     "D": "食道內銅幣可以利用導管(foley catheter)移除",
     "E": "注意將來容易發生食道狹窄"
    },
-   "answer": "B"
+   "answer": "B",
+   "explanation": {
+    "quick": "無症狀的食道內鈍物或硬幣**最多觀察 24 小時**，不是 72 小時；仍滯留就應內視鏡取出。",
+    "background": "Nelson 第 373.1 節（食道異物）：\n• **鈕扣電池**：1 小時內就可造成黏膜損傷，**4 小時內可侵犯食道全層**，必須在 2 小時內緊急取出\n• 尖銳物、多顆磁鐵、有呼吸症狀者：12 小時內取出\n• **無症狀的鈍物與硬幣：最多觀察 24 小時**等待自行進入胃\n• 肉塊嵌塞：若能處理口水可觀察至 24 小時；沒做過食道手術者可用 **glucagon**（0.05 mg/kg IV）降低下食道括約肌壓力幫助通過\n• 取出方式：內視鏡為主；部分單純硬幣可在透視下用 **Foley 導管**拉出或推入胃中\n• 併發症：穿孔、**食道狹窄**（尤其電池）、氣管食道瘻管、主動脈食道瘻管",
+    "options": {
+     "A": "正確。",
+     "B": "錯誤（本題答案）：最多觀察 24 小時。",
+     "C": "正確。",
+     "D": "正確。",
+     "E": "正確。"
+    },
+    "sources": [
+     "Nelson Textbook of Pediatrics 22e：Ch.373 Ingestions，373.1 Foreign Bodies in the Esophagus（p.2273）"
+    ],
+    "draft": true
+   }
   },
   {
    "id": "111-75",
@@ -5284,7 +5497,22 @@
     "D": "會有hypocalcemia",
     "E": "血清學檢查amylase比lipase對胰臟急性發炎更具有特異性"
    },
-   "answer": "E"
+   "answer": "E",
+   "explanation": {
+    "quick": "**lipase 比 amylase 對急性胰臟炎更具特異性**，是首選檢查，E 說反了。",
+    "background": "Nelson 第 399 章（急性胰臟炎）：\n• 兒童最常見的胰臟疾病；常見病因：**腹部鈍傷**、多系統疾病（溶血性尿毒症、發炎性腸道疾病）、膽結石或膽泥、藥物\n• 嚴重型：休克、高燒、黃疸、腹水、**低血鈣**、肋膜積液；臍周藍色瘀斑（**Cullen sign**）或腰側瘀斑（**Grey Turner sign**）\n• 診斷：**血清 lipase 是首選**，比 amylase 更具特異性；lipase 在 4–8 小時上升、24–48 小時達高峰，比 amylase 多持續 8–14 天\n• 其他檢驗異常：血液濃縮、凝血異常、白血球增多、高血糖、低血鈣、GGT 與膽紅素上升\n• 腹部 X 光：哨兵腸環、**橫結腸擴張（cutoff sign）**、腸阻塞、腰大肌邊緣模糊",
+    "options": {
+     "A": "正確。",
+     "B": "正確。",
+     "C": "正確。",
+     "D": "正確。",
+     "E": "錯誤（本題答案）：lipase 比 amylase 更具特異性。"
+    },
+    "sources": [
+     "Nelson Textbook of Pediatrics 22e：Ch.399 Pancreatitis，Acute Pancreatitis（p.2426）"
+    ],
+    "draft": true
+   }
   },
   {
    "id": "111-76",
@@ -5300,7 +5528,23 @@
     "D": "關於extraintestinal complication of enteric infection，感染Campylobacter後可能出現Guillain-Barre syndrome",
     "E": "Rotavirus的enterotoxin會造成secretory diarrhea，此外會影響腸道神經系統，減少胃排空及增加小腸的蠕動"
    },
-   "answer": "A"
+   "answer": "A",
+   "explanation": {
+    "quick": "**功能性腹瀉（幼兒腹瀉）的特徵是「無痛」**：每天 4 次以上大量不成形便、持續 4 週以上，孩子生長正常——不會「幾乎都伴有腹痛」。",
+    "background": "Nelson 第 388–389 章：\n• **功能性腹瀉（toddler's diarrhea）**：嬰兒期或學齡前開始，**每天無痛、反覆**排出 4 次以上大量不成形便，持續 ≥ 4 週；夜間通常不排便，孩子精神好、**沒有生長遲滯**，學齡前自行緩解；常與喝太多含糖飲料有關\n• **滲透性腹瀉**：未吸收的溶質把水拉入腸腔；禁食後明顯改善；糞便滲透壓間隙增加（> 100 mOsm/kg）\n• **分泌性腹瀉**：離子被主動分泌到腸腔，禁食仍持續；滲透壓間隙低（< 50）\n• 蛋白質流失性腸病（如腸道淋巴管擴張）：糞便 **α1-antitrypsin** 上升\n• **Campylobacter** 感染後可發生 **Guillain-Barré 症候群**、反應性關節炎與結節性紅斑\n• 輪狀病毒的 NSP4 腸毒素造成分泌性腹瀉，並活化腸道神經系統",
+    "options": {
+     "A": "錯誤（本題答案）：功能性腹瀉是無痛的。",
+     "B": "正確。",
+     "C": "正確。",
+     "D": "正確。",
+     "E": "正確。"
+    },
+    "sources": [
+     "Nelson Textbook of Pediatrics 22e：Ch.388 Chronic Diarrhea（p.2376–2378）；Ch.389 Disorders of Brain-Gut Interaction（Functional diarrhea，p.2385–2388）",
+     "Nelson Textbook of Pediatrics 22e：Ch.248 Campylobacter（p.1789）"
+    ],
+    "draft": true
+   }
   },
   {
    "id": "111-77",
@@ -5316,7 +5560,23 @@
     "D": "含有鐵及鋅的副食品可在4~6個月時開始添加",
     "E": "於純哺育母乳之嬰兒，除非有水分大量喪失的情形，並不需要另外補充水分，但並非絕對不可喝水"
    },
-   "answer": "C"
+   "answer": "C",
+   "explanation": {
+    "quick": "台灣兒科醫學會建議：純母乳或部分母乳哺育的寶寶，**出生後即開始**每天補充 400 IU 維生素 D，不是 4 個月才開始。",
+    "background": "本題依據台灣兒科醫學會嬰兒哺育建議（Nelson 未涵蓋台灣建議）：\n• 母乳哺育至 1 歲或更久；純母乳哺育約 6 個月，4–6 個月開始添加含鐵、鋅的副食品\n• 母乳中維生素 D 含量偏低，已有純母乳哺育兒維生素 D 缺乏與佝僂症的報告——**出生後就應每天補充 400 IU**\n• 純母乳哺育的嬰兒除非大量失水，不需另外補充水分，但不是絕對不能喝水\nNelson 第 61 章與第 69 章同樣建議：母乳哺育嬰兒自出生後幾天內開始每天補充 400 IU 維生素 D；純母乳哺育約 6 個月，之後繼續哺乳並引入富含鐵、鋅的副食品。",
+    "options": {
+     "A": "正確（依官方答案）。",
+     "B": "正確。",
+     "C": "錯誤（本題答案）：應出生後即開始補充。",
+     "D": "正確。",
+     "E": "正確。"
+    },
+    "sources": [
+     "台灣兒科醫學會：嬰兒哺育建議（Nelson 未涵蓋）",
+     "Nelson Textbook of Pediatrics 22e：Ch.61 Feeding Healthy Infants（p.409–413）；Ch.69 Vitamin D Deficiency（Rickets）"
+    ],
+    "draft": true
+   }
   },
   {
    "id": "111-78",
@@ -5332,7 +5592,22 @@
     "D": "Bacterial overgrowth為短腸症候群常見之併發症，metronidazole之使用常有助於改善bacterial overgrowth之臨床症狀",
     "E": "飲食中提高carbohydrate, 降低protein有助於改善bacterial overgrowth"
    },
-   "answer": "E"
+   "answer": "E",
+   "explanation": {
+    "quick": "短腸症候群合併細菌過度增生時，飲食建議是**高脂肪、不含單醣**，不是提高碳水化合物。",
+    "background": "Nelson 第 385.6 節（短腸症候群）：\n• 原因（Table 385.6）：先天（先天性短腸、腸閉鎖、腹裂）；腸切除（**壞死性腸炎、合併或不合併腸迴轉不良的扭轉、長節段 Hirschsprung 病**、胎便性腹膜炎、Crohn 病、外傷）\n• **近端 100–200 公分空腸是碳水化合物、蛋白質、鐵與水溶性維生素的主要吸收部位**；**維生素 B12 與膽鹽只在遠端迴腸吸收**\n• 迴腸切除比空腸切除更難耐受（迴腸適應能力較好）；保留迴盲瓣與結腸較好\n• **Cholestyramine** 對遠端迴腸切除者的腹瀉有幫助，但可能耗竭膽酸池而**加重脂肪瀉**\n• **細菌過度增生**很常見，會延緩腸道餵食；經驗性 **metronidazole**（或 rifaximin、nitazoxanide）常有幫助\n• **高脂肪、不含單醣的飲食**有助於減少細菌過度增生並促進腸道適應\n• 其他併發症：腸衰竭相關肝病、B12 缺乏、腎結石（高草酸尿）",
+    "options": {
+     "A": "正確。",
+     "B": "正確。",
+     "C": "正確。",
+     "D": "正確。",
+     "E": "錯誤（本題答案）：應高脂肪、少單醣。"
+    },
+    "sources": [
+     "Nelson Textbook of Pediatrics 22e：Ch.385 Disorders of Malabsorption，385.6 Short Bowel Syndrome 與 Table 385.6、Fig. 385.7（p.2345–2347）"
+    ],
+    "draft": true
+   }
   },
   {
    "id": "111-79",
@@ -5348,7 +5623,22 @@
     "D": "Feeding refusal或anorexia的表現可出現在任何年紀的兒童",
     "E": "呼吸道症狀表現主要為Cough, Stridor, wheezing, hoarseness, athma為主"
    },
-   "answer": "B"
+   "answer": "B",
+   "explanation": {
+    "quick": "胃食道逆流造成的**呼吸暫停（apnea）主要發生在嬰兒期**，兒童與青少年不會以 apnea 表現。",
+    "background": "Nelson Table 369.1（依年齡的 GERD 症狀）：\n• **呼吸暫停／BRUE／血氧下降：只見於嬰兒（+），兒童與青少年（−）**\n• 心搏過緩：嬰兒\n• 吐奶：嬰兒最常見；過度哭鬧、生長遲滯、Sandifer 姿勢也以嬰兒為主\n• 持續咳嗽、**吸入性肺炎**：各年齡都可見（兒童最多）\n• 喘鳴、喉炎、喘鳴聲、哮吼：兒童較多\n• **貧血、黑便、吐血：各年齡都可見**\n• **拒食、餵食困難、厭食：各年齡都可見**\n• 胸口灼熱、上腹痛、胸痛、吞嚥困難：兒童與青少年\nTable 369.2：呼吸道相關表現包括**喘鳴、喘息（stridor）、咳嗽、聲音沙啞**、反覆肺炎；GERD 也可能加重氣喘。",
+    "options": {
+     "A": "正確。",
+     "B": "錯誤（本題答案）：呼吸暫停主要見於嬰兒。",
+     "C": "正確。",
+     "D": "正確。",
+     "E": "正確。"
+    },
+    "sources": [
+     "Nelson Textbook of Pediatrics 22e：Ch.369 Gastroesophageal Reflux Disease，Table 369.1–369.2（p.2265–2266）"
+    ],
+    "draft": true
+   }
   },
   {
    "id": "111-80",
@@ -5364,7 +5654,22 @@
     "D": "較常侵犯肝臟右葉",
     "E": "Pyogenic liver abscess之抗生素療程一般為4~6週"
    },
-   "answer": "C"
+   "answer": "C",
+   "explanation": {
+    "quick": "兒童化膿性肝膿瘍的表現是發燒、肝腫大、右上腹壓痛，**黃疸並不常見**。",
+    "background": "Nelson 第 407 章（肝膿瘍）：\n• 化膿性肝膿瘍在兒童不常見；細菌經四種途徑進入肝臟：肝動脈（菌血症）、膽道、**門靜脈**（門靜脈敗血症，如**闌尾炎**、腹內膿瘍；新生兒可經臍靜脈）、直接蔓延\n• 危險因子：肝膽惡性腫瘤、肝移植、慢性肉芽腫病、高 IgE 症候群、腸胃疾病\n• 表現不具特異性：發燒、畏寒、倦怠、噁心、腹痛（可有右上腹壓痛）、肝腫大；**黃疸不常見**\n• 病原常為多菌：**金黃色葡萄球菌**、鏈球菌、腸道革蘭氏陰性菌（**大腸桿菌、克雷伯氏菌**）與厭氧菌；血液培養陽性約 25–35%（題目寫約 50%）\n• 治療：廣效抗生素，**通常 4–6 週**（前 2 週靜脈）；依大小與範圍加上經皮或手術引流\n• 膿瘍多位於**右葉**（右葉血流較多）",
+    "options": {
+     "A": "正確。",
+     "B": "正確（依官方答案）。",
+     "C": "錯誤（本題答案）：黃疸不常見。",
+     "D": "正確。",
+     "E": "正確。"
+    },
+    "sources": [
+     "Nelson Textbook of Pediatrics 22e：Ch.407 Liver Abscess（p.2473–2474）"
+    ],
+    "draft": true
+   }
   },
   {
    "id": "111-81",
@@ -5380,7 +5685,22 @@
     "D": "採取趴睡的姿勢（prone position）",
     "E": "立即插管並給予呼吸器支持（mechanical ventilation）"
    },
-   "answer": "E"
+   "answer": "E",
+   "explanation": {
+    "quick": "食道閉鎖合併氣管食道瘻管（口吐泡沫、鼻胃管捲在上段食道）**應盡量避免插管與正壓呼吸器**，因為正壓會經瘻管灌入胃中、使胃脹大並加重吸入。",
+    "background": "Nelson 第 365.1 節：\n• 表現：羊水過多、出生後口鼻冒泡流涎、餵食時嗆咳發紺、**鼻胃管放不進胃**（X 光見管子捲在上段食道盲端）；胃腸有氣體代表有遠端瘻管（最常見型）\n• 術前處置：維持呼吸道通暢；**持續抽吸上段盲囊**避免吸入口水；**抗生素**預防吸入性肺炎；**俯臥姿勢**減少胃液經遠端瘻管逆流到氣管；禁食並給予靜脈輸液\n• **盡可能避免氣管內插管與機械通氣**，因為會使胃更加脹大\n• 手術：結紮瘻管並做食道端端吻合（右側開胸或胸腔鏡）；早產或情況複雜者可先結紮瘻管並做胃造口\n• 需尋找相關畸形（VACTERL：脊椎、肛門、心臟、氣管食道、腎臟、肢體）",
+    "options": {
+     "A": "恰當：持續抽吸上段盲囊。",
+     "B": "恰當。",
+     "C": "恰當：已有雙側肺浸潤，應給抗生素。",
+     "D": "恰當：俯臥可減少胃液逆流到氣管。",
+     "E": "最不恰當（本題答案）：應盡量避免插管與正壓通氣。"
+    },
+    "sources": [
+     "Nelson Textbook of Pediatrics 22e：Ch.365 Congenital Anomalies，365.1 Esophageal Atresia and Tracheoesophageal Fistula（p.2258）"
+    ],
+    "draft": true
+   }
   },
   {
    "id": "111-82",
@@ -5396,7 +5716,23 @@
     "D": "需於30天內檢測直接及總膽紅素，並求其比值",
     "E": "主要是因為全母乳哺餵造成的延遲性黃疸，暫停餵母乳即可"
    },
-   "answer": "D"
+   "answer": "D",
+   "explanation": {
+    "quick": "滿 2–3 週仍有黃疸，應在 **30 天內驗直接與總膽紅素**，以排除膽道閉鎖等膽汁滯留疾病。",
+    "background": "Nelson 第 137 章與第 404 章：\n• 足月兒膽紅素在 10–14 天左右降到成人值；超過 2 週仍黃，要考慮母乳性黃疸、溶血、甲狀腺低下，以及**膽汁滯留**（膽道閉鎖等）\n• 直接（結合型）膽紅素上升一定是病理性，需進一步評估（常用切點：直接膽紅素 > 1.0 mg/dL，或總膽紅素 ≤ 5 mg/dL 時直接膽紅素 > 1.0、> 5 mg/dL 時直接佔 > 20%）\n• 膽道閉鎖越早做 Kasai 手術（60 天內）預後越好；**台灣推行嬰兒大便卡篩檢**後，60 天內接受手術的比例從 60% 提高到 74%（Nelson 第 404 章特別提到）\n• 母乳性黃疸不需停餵母乳，但必須先排除直接型高膽紅素血症\n台灣兒科醫學會建議：滿 2 週仍有黃疸的嬰兒，應在 1 個月內檢測直接與總膽紅素。",
+    "options": {
+     "A": "錯誤：直接膽紅素 > 2 mg/dL 是病理性。",
+     "B": "錯誤：應仔細比對大便辨識卡。",
+     "C": "錯誤（依官方答案）：直接佔總膽紅素 > 20%（或直接 > 1 mg/dL）才需轉診，10% 不是標準。",
+     "D": "正確。",
+     "E": "錯誤：須先排除膽汁滯留，且母乳性黃疸不需停餵。"
+    },
+    "sources": [
+     "Nelson Textbook of Pediatrics 22e：Ch.137 Jaundice and Hyperbilirubinemia in the Newborn（p.1107–1110）",
+     "Nelson Textbook of Pediatrics 22e：Ch.404 Cholestasis（台灣大便卡篩檢，p.2445）"
+    ],
+    "draft": true
+   }
   },
   {
    "id": "111-83",
@@ -5412,7 +5748,22 @@
     "D": "於左手接上血氧監視器（pulse oximeter）觀察其血氧值決定是否使用氧氣",
     "E": "若出生10分鐘後的血氧值為88%，應給予100%的氧氣使其血氧濃度能維持在100%"
    },
-   "answer": "C"
+   "answer": "C",
+   "explanation": {
+    "quick": "初步處置後仍無自主呼吸、心跳 < 100 次/分——**先以面罩給予正壓通氣**（自動充氣式甦醒球或 T-piece）。",
+    "background": "Nelson 第 123 章（2020 AHA 新生兒急救）：\n• 擦乾、保暖、刺激後仍呼吸暫停或心跳 < 100 → **面罩正壓通氣**（PIP 約 20–25 cmH2O、PEEP 5、40–60 次/分）\n• 同時把血氧計接在**右手（導管前）**\n• 氧氣：≥ 35 週以 21% 開始；**< 35 週早產兒以 21–30% 開始**，依各分鐘目標血氧調整（10 分鐘目標約 85–95%），**避免高氧**\n• 正壓通氣 30 秒心跳沒改善，先做 **MRSOPA** 矯正（面罩密合、重新擺位、抽吸、張口、加壓、替代呼吸道）；有效通氣 60 秒後心跳仍 < 60 才插管、胸外按壓、用 epinephrine\n• 心跳 60–100 之間不需給強心藥，重點是確保有效通氣",
+    "options": {
+     "A": "錯誤：心跳 < 100 時應先確保有效通氣，心跳 < 60 才考慮 epinephrine。",
+     "B": "錯誤：早產兒以 21–30% 氧氣開始。",
+     "C": "正確。",
+     "D": "錯誤：血氧計應接右手（導管前）。",
+     "E": "錯誤：10 分鐘目標約 85–95%，不應追求 100%。"
+    },
+    "sources": [
+     "Nelson Textbook of Pediatrics 22e：Ch.123 Neonatal Resuscitation and Delivery Room Emergencies，Fig. 123.2 與 Resuscitation of the Preterm Infant（p.1070–1072）"
+    ],
+    "draft": true
+   }
   },
   {
    "id": "111-84",
@@ -5428,7 +5779,22 @@
     "D": "母親罹患開放性肺結核尚未接受藥物治療",
     "E": "母親受到人類嗜T淋巴球病毒(Human T-cell lymphotropic virus)感染"
    },
-   "answer": "A"
+   "answer": "A",
+   "explanation": {
+    "quick": "母親服用**抗甲狀腺藥物**（如 methimazole、propylthiouracil）**可以繼續哺乳**，不需暫停。",
+    "background": "Nelson Table 61.2（哺乳的絕對與相對禁忌）：\n• **HIV、HTLV 感染**：美國等資源充足地區禁止哺乳\n• **結核病**：活動性結核在接受約 2 週適當治療前，**禁止直接哺乳**（可擠出母乳由他人餵）\n• **單純疱疹**：**乳房有活動性皰疹病灶**時禁止該側哺乳\n• 水痘：嬰兒不應直接接觸病灶，並給予免疫球蛋白\n• **化療藥物、放射性藥物**：一般禁止哺乳（核醫檢查需依同位素半衰期暫停）\n• CMV、吸菸、B 型肝炎都不是禁忌\n抗甲狀腺藥物在一般劑量下分泌到母乳的量很少，美國兒科醫學會認為與哺乳相容，可監測嬰兒甲狀腺功能。",
+    "options": {
+     "A": "最不需要暫停（本題答案）。",
+     "B": "需暫停：放射性藥物。",
+     "C": "需暫停：乳房有活動性皰疹病灶。",
+     "D": "需暫停：未治療的開放性肺結核。",
+     "E": "需暫停：HTLV 可經母乳傳染。"
+    },
+    "sources": [
+     "Nelson Textbook of Pediatrics 22e：Ch.61 Feeding Healthy Infants，Table 61.2 Absolute and Relative Contraindications to Breastfeeding（p.410）"
+    ],
+    "draft": true
+   }
   },
   {
    "id": "111-85",
@@ -5444,7 +5810,22 @@
     "D": "靜脈脂肪（IV lipids）應該給予來符合能量需求",
     "E": "腸道營養的熱量目標為100 kcal/kg/day讓嬰兒可以達到良好體重生長"
    },
-   "answer": "E"
+   "answer": "E",
+   "explanation": {
+    "quick": "極低體重早產兒經腸道營養的熱量目標約 **110–135 kcal/kg/day**，100 kcal/kg/day 不足以達到良好生長。",
+    "background": "Nelson 第 119 章：\n• 沒有靜脈胺基酸時，極早產兒每天損失 **1–2% 的身體蛋白質**\n• 靜脈胺基酸與葡萄糖應在出生後立即開始；出生 24 小時內至少 **2 g/kg** 胺基酸，24–48 小時內至少 3 g/kg（題目寫 3.5 g/kg，依官方答案視為正確）\n• 為符合能量需求，可使用**靜脈脂肪乳劑**\n• 腸道餵食逐步增加（每天 15–30 mL/kg），目標約 **110–135 kcal/kg/天** 及 3.5–4.5 g 蛋白質/kg/天；母乳需加強化劑或使用早產兒配方",
+    "options": {
+     "A": "正確。",
+     "B": "正確。",
+     "C": "正確（依官方答案）。",
+     "D": "正確。",
+     "E": "錯誤（本題答案）：目標應約 110–135 kcal/kg/天。"
+    },
+    "sources": [
+     "Nelson Textbook of Pediatrics 22e：Ch.119 The High-Risk Infant，Nutrition（p.1044）"
+    ],
+    "draft": true
+   }
   },
   {
    "id": "111-86",
@@ -5460,7 +5841,22 @@
     "D": "調高flow rate",
     "E": "調高expiratory time"
    },
-   "answer": "E"
+   "answer": "E",
+   "explanation": {
+    "quick": "氧合主要取決於 **FiO2 與平均呼吸道壓力（MAP）**；**延長呼氣時間**會降低 MAP，不能增加氧合（它是幫助排出 CO2 與避免空氣滯留）。",
+    "background": "Nelson 第 86 章（Fig. 86.5，增加平均呼吸道壓力的五種方法）：\n1. 增加**流速（flow rate）**，使吸氣波形變成方波\n2. 增加**吸氣尖峰壓力（PIP）**\n3. 反轉吸呼比或**延長吸氣時間**（不改變呼吸次數）\n4. 增加 **PEEP**\n5. 縮短**呼氣時間**以增加呼吸次數（不改變吸氣時間）\n氧合 ≈ FiO2 × MAP；通氣（CO2 排除）主要取決於潮氣量與呼吸次數。延長呼氣時間反而降低 MAP，用於阻塞性肺病避免空氣滯留。",
+    "options": {
+     "A": "可增加氧合。",
+     "B": "可增加氧合：提高 MAP。",
+     "C": "可增加氧合：提高 MAP。",
+     "D": "可增加氧合：提高 MAP。",
+     "E": "無法增加氧合（本題答案）。"
+    },
+    "sources": [
+     "Nelson Textbook of Pediatrics 22e：Ch.86 Acute Care of Respiratory Distress and Failure，Fig. 86.5（p.622）"
+    ],
+    "draft": true
+   }
   },
   {
    "id": "111-87",
@@ -5476,7 +5872,23 @@
     "D": "做三次檢查，之間間隔一小時，右手和下肢SO2都小於95%判斷為不通過",
     "E": "於出生後24小時以內進行篩檢"
    },
-   "answer": "E"
+   "answer": "E",
+   "explanation": {
+    "quick": "危急型先天性心臟病的血氧篩檢應在出生 **24 小時以後**（24–48 小時、出院前）進行；太早做偽陽性高。",
+    "background": "Nelson 第 474 章與第 13 章：\n• 所有新生兒都建議以**脈衝式血氧儀**篩檢危急型先天性心臟病（左心發育不全、肺動脈閉鎖、法洛氏四重症、全肺靜脈回流異常、大動脈轉位、三尖瓣閉鎖、動脈幹、主動脈弓窄縮等）\n• 時間：**出生 24–48 小時之間、出院前**\n• 測**右手**與**任一腳**\n• 通過：右手或腳 SpO2 **≥ 95%**，且手腳差異 **≤ 3%**\n• 不通過：任一處 < 90%\n• 90–94% 或差異 > 3%：1 小時後重測；重測三次仍未達標（右手與下肢都 < 95% 或差異 > 3%）即為不通過，需心臟超音波\n太早篩檢時，正常新生兒的動脈導管與肺血管阻力尚在轉變，偽陽性較高。",
+    "options": {
+     "A": "適當。",
+     "B": "適當。",
+     "C": "適當。",
+     "D": "適當（依官方答案）。",
+     "E": "最不適當（本題答案）：應在出生 24 小時以後。"
+    },
+    "sources": [
+     "Nelson Textbook of Pediatrics 22e：Ch.474 Evaluation and Screening of the Infant or Child with Congenital Heart Disease（p.2774）",
+     "Nelson Textbook of Pediatrics 22e：Ch.13 Maximizing Children's Health（CCHD 篩檢，p.85）"
+    ],
+    "draft": true
+   }
   },
   {
    "id": "111-88",
@@ -5492,7 +5904,22 @@
     "D": "爲避免缺氧導致各器官的傷害，SpO2應該維持在97%以上",
     "E": "接受表面張力素治療後幾小時後，突然出現血氧濃度下降，此時應該思考是否發生氣胸"
    },
-   "answer": "D"
+   "answer": "D",
+   "explanation": {
+    "quick": "早產兒血氧目標是 **91–95%**，維持在 97% 以上會增加高氧傷害（早產兒視網膜病變、慢性肺病），D 錯誤。",
+    "background": "Nelson 第 126 章（呼吸窘迫症候群，RDS）：\n• 胸部 X 光：毛玻璃樣、空氣支氣管圖；嚴重者雙側全白（white-out，臨床常用的 Grade 4）\n• 產前未用類固醇、極早產，RDS 風險高\n• 產房即開始 **nCPAP** 可減少插管與支氣管肺發育不全；需插管者應**盡早給予表面張力素**\n• 給氧：使 PaO2 維持 50–70 mmHg、**SaO2 91–95%**；較低目標（85–89%）會增加死亡率，較高目標則增加 ROP 等高氧傷害——**目前建議 91–95%**\n• 表面張力素治療後肺順應性快速改善，若沒有調降呼吸器壓力，容易發生**氣胸**；治療後突然血氧下降要想到氣胸",
+    "options": {
+     "A": "正確（依官方答案）。",
+     "B": "正確。",
+     "C": "正確。",
+     "D": "錯誤（本題答案）：目標應為 91–95%。",
+     "E": "正確。"
+    },
+    "sources": [
+     "Nelson Textbook of Pediatrics 22e：Ch.126 Respiratory Distress Syndrome（p.1077–1081）"
+    ],
+    "draft": true
+   }
   },
   {
    "id": "111-89",
@@ -5508,7 +5935,23 @@
     "D": "行為制約(behavior modification)對罹患ADHD的孩童有益處",
     "E": "ADHD治療的中樞神經興奮劑常見抑制食慾"
    },
-   "answer": "A"
+   "answer": "A",
+   "explanation": {
+    "quick": "ADHD 與大腦**多巴胺與正腎上腺素傳導不足**有關（中樞興奮劑就是增強這些傳導），不是多巴胺「異常高」。",
+    "background": "Nelson 第 50 章與第 33 章：\n• ADHD 是學齡兒童最常見的神經行為疾患之一；**男孩比女孩多**（約 2–3 倍），女孩較常表現為不專注型\n• 病因以遺傳為主，牽涉額葉—紋狀體路徑的**多巴胺與正腎上腺素**功能不足\n• 約半數以上**到成人期仍有症狀**\n• 治療：學齡前以**行為治療（父母訓練、行為矯正）**為第一線；學齡兒童合併藥物與行為治療\n• **中樞興奮劑**（methylphenidate、amphetamine）增強多巴胺與正腎上腺素傳導；常見副作用：**食慾下降**、失眠、頭痛、腹痛；atomoxetine 為非興奮劑選擇",
+    "options": {
+     "A": "錯誤（本題答案）：是多巴胺傳導不足。",
+     "B": "正確。",
+     "C": "正確。",
+     "D": "正確。",
+     "E": "正確。"
+    },
+    "sources": [
+     "Nelson Textbook of Pediatrics 22e：Ch.50 Attention-Deficit/Hyperactivity Disorder（p.309–316）",
+     "Nelson Textbook of Pediatrics 22e：Ch.33 Psychopharmacology，Stimulants（p.222–223）"
+    ],
+    "draft": true
+   }
   },
   {
    "id": "111-90",
@@ -5524,7 +5967,22 @@
     "D": "9-11歲",
     "E": "12-14歲"
    },
-   "answer": "C"
+   "answer": "C",
+   "explanation": {
+    "quick": "中度智能障礙（IQ 約 35–49）的成人，心智年齡約相當於 **6–8 歲**的正常兒童。",
+    "background": "智能障礙嚴重度與成人心智年齡（DSM 與 Nelson 第 56 章的分級概念）：\n• 輕度（IQ 50–69）：約 9–12 歲；可學到小學程度的學業，成人可獨立生活工作\n• **中度（IQ 35–49）：約 6–8 歲**；可學會自我照顧與簡單工作，需要一定程度的支持\n• 重度（IQ 20–34）：約 3–5 歲；需要大量支持\n• 極重度（IQ < 20）：< 3 歲；需要全面照顧\n現行分級更強調概念、社會與實用三個適應功能領域，而不只看 IQ。",
+    "options": {
+     "A": "錯誤：極重度。",
+     "B": "錯誤：重度。",
+     "C": "正確。",
+     "D": "錯誤：輕度。",
+     "E": "錯誤：高於輕度。"
+    },
+    "sources": [
+     "Nelson Textbook of Pediatrics 22e：Ch.56 Developmental Delay and Intellectual Disability（p.346–357）"
+    ],
+    "draft": true
+   }
   },
   {
    "id": "111-91",
@@ -5540,7 +5998,22 @@
     "D": "症狀反覆超過1年以上",
     "E": "症狀出現的頻率會隨時間明顯起伏"
    },
-   "answer": "A"
+   "answer": "A",
+   "explanation": {
+    "quick": "妥瑞氏症需要**動作型與聲音型抽搐都曾出現**，但**不必同時出現**。",
+    "background": "Nelson 第 37 章（抽搐症，DSM-5）：\n• **妥瑞氏症（TD）**：病程中某段時間有**多種動作型抽搐與至少一種聲音型抽搐**（**不一定同時出現**）；抽搐頻率可起伏消長，但自第一次出現起**持續超過 1 年**；**18 歲以前**發病；不是物質或其他疾病造成\n• **持續性（慢性）抽搐症**：只有動作型**或**只有聲音型，超過 1 年\n• **暫時性抽搐症**：< 1 年\n• 共病：強迫症（20–60%）、ADHD（約 50%）\n• 抽搐常隨時間明顯起伏，壓力、興奮、疲倦時加重",
+    "options": {
+     "A": "錯誤（本題答案）：不需同時出現。",
+     "B": "正確。",
+     "C": "正確。",
+     "D": "正確。",
+     "E": "正確。"
+    },
+    "sources": [
+     "Nelson Textbook of Pediatrics 22e：Ch.37 Motor Disorders and Habits，Tic disorders（p.241–242）"
+    ],
+    "draft": true
+   }
   },
   {
    "id": "111-92",
@@ -5556,7 +6029,22 @@
     "D": "與熱性痙攣有關的基因為SCN1A, SCN1B, SCN9A",
     "E": "在38到39度時發生熱性痙攣的病童以後比較容易再發生熱性痙攣"
    },
-   "answer": "C"
+   "answer": "C",
+   "explanation": {
+    "quick": "熱性痙攣後日後發生癲癇的風險，**神經發展異常（33%）高於癲癇家族史（18%）**，C 錯誤。",
+    "background": "Nelson 第 633.1 節：\n• Table 633.10（熱性痙攣後發生癲癇的風險）：單純型 1%、反覆熱性痙攣 4%、複雜型 6%、發燒 < 1 小時就發作 11%、**癲癇家族史 18%**、局部性複雜型 29%、**神經發展異常 33%**\n• Table 633.9（熱性痙攣再發）：主要因子為 < 1 歲、發燒 < 24 小時、**發作時體溫 38–39°C**；次要為熱性痙攣或癲癇家族史、複雜型、上托兒所、男性、低血鈉\n• **Dravet 症候群**（SCN1A）常以熱性痙攣起始\n• 與熱性痙攣相關的基因：**SCN1A、SCN1B、SCN9A**、CPA6",
+    "options": {
+     "A": "正確（依官方答案）：複雜型 6% 對單純型 1%。",
+     "B": "正確。",
+     "C": "錯誤（本題答案）：神經發展異常的風險更高。",
+     "D": "正確。",
+     "E": "正確。"
+    },
+    "sources": [
+     "Nelson Textbook of Pediatrics 22e：Ch.633 Seizures in Childhood，633.1 Febrile Seizures，Table 633.9–633.10（p.3595–3597）"
+    ],
+    "draft": true
+   }
   },
   {
    "id": "111-93",
@@ -5572,7 +6060,23 @@
     "D": "20th～24th 週",
     "E": "28th～32nd 週"
    },
-   "answer": "C"
+   "answer": "C",
+   "explanation": {
+    "quick": "母血甲型胎兒蛋白（MSAFP）篩檢神經管缺損，在**懷孕第二孕期約 16–18 週**最適宜（15–20 週範圍）。",
+    "background": "Nelson 第 754 章與第 118 章：\n• 建議所有孕婦做神經管缺損的產前篩檢：**第二孕期**抽血檢測**甲型胎兒蛋白（AFP）**；神經管缺損時 AFP 常升高\n• AFP 異常者以高解析度超音波進一步檢查，可見「檸檬徵象」（額骨內凹）與「香蕉徵象」（小腦變形）等\n• 葉酸缺乏或使用葉酸拮抗劑與神經管缺損有關；懷孕前與懷孕早期補充葉酸可預防\nMSAFP 在 15–20 週測量，16–18 週準確度最好；太早數值變化大，太晚則錯過後續處置時機。",
+    "options": {
+     "A": "錯誤：太早。",
+     "B": "錯誤：太早。",
+     "C": "正確。",
+     "D": "錯誤：太晚。",
+     "E": "錯誤：太晚。"
+    },
+    "sources": [
+     "Nelson Textbook of Pediatrics 22e：Ch.754 Meningomyelocele (Spina Bifida)（p.4400）",
+     "Nelson Textbook of Pediatrics 22e：Ch.118 Fetal Intervention and Surgery（p.1034）"
+    ],
+    "draft": true
+   }
   },
   {
    "id": "111-94",
@@ -5588,7 +6092,23 @@
     "D": "貝登氏症 (Batten disease)",
     "E": "龐貝氏症 (Pompe disease)"
    },
-   "answer": "C"
+   "answer": "C",
+   "explanation": {
+    "quick": "女童出生正常，之後**頭圍成長減緩、語言退化、手部洗手樣刻板動作**——典型的**蕾特氏症（Rett syndrome）**。",
+    "background": "Nelson 第 639 章與第 99 章：\n• Rett 症候群：X 染色體上 **MECP2** 基因變異，幾乎都是女孩\n• 病程：出生與早期發展大致正常（約 6–18 個月），之後出現**頭圍成長減速**、**失去有目的的手部技能**、**洗手或扭手樣刻板動作**、語言退化、步態失用、自閉樣行為；也可有呼吸異常（過度換氣、閉氣）、癲癇、脊柱側彎\n其他選項：\n• 雷諾氏症：肢端血管痙攣\n• 雷氏症候群：病毒感染後（常與阿斯匹靈有關）急性腦病變合併肝功能異常\n• Batten 病（神經元蠟樣脂褐質症）：視力喪失、癲癇、退化\n• 龐貝氏症：肝醣儲積症第二型，嬰兒型以心肌病變與肌無力為主",
+    "options": {
+     "A": "錯誤。",
+     "B": "錯誤。",
+     "C": "正確。",
+     "D": "錯誤。",
+     "E": "錯誤。"
+    },
+    "sources": [
+     "Nelson Textbook of Pediatrics 22e：Ch.639 Neurodegenerative Disorders of Childhood，Rett syndrome 表（p.3712）",
+     "Nelson Textbook of Pediatrics 22e：Ch.99 Chromosome Disorders（MECP2，p.769）"
+    ],
+    "draft": true
+   }
   },
   {
    "id": "111-95",
@@ -5604,7 +6124,22 @@
     "D": "Miller-Dieker syndrome",
     "E": "Smith-Magenis syndrome"
    },
-   "answer": "B"
+   "answer": "B",
+   "explanation": {
+    "quick": "先天性心臟病、智能障礙、**對聲音敏感**、**小精靈臉**、過動——典型的 **Williams 症候群**（7q11.23 缺失）。",
+    "background": "Nelson 第 476 章：\n• Williams 症候群合併**主動脈瓣上狹窄**（也可有周邊肺動脈狹窄）\n• 發展遲緩（IQ 41–80）\n• **小精靈臉**：臉頰豐滿、額頭寬、鼻樑扁平、人中長、嘴唇厚\n• **嬰兒期特發性高血鈣**\n• 個性**多話、愛交際（雞尾酒會個性）**、**對聲音過度敏感**；常合併 ADHD、焦慮\n• 其他：牙齒異常、指甲發育不全、疝氣\n鑑別：唐氏症（扁平臉、眼角上斜、心內膜墊缺損）、Angelman（快樂木偶、癲癇、無語言）、Miller-Dieker（無腦迴）、Smith-Magenis（睡眠障礙、自傷）。",
+    "options": {
+     "A": "錯誤。",
+     "B": "正確。",
+     "C": "錯誤。",
+     "D": "錯誤。",
+     "E": "錯誤。"
+    },
+    "sources": [
+     "Nelson Textbook of Pediatrics 22e：Ch.476 Acyanotic Congenital Heart Disease: Obstructive Lesions，Supravalvular aortic stenosis 與 Fig. 476.5（p.2791）"
+    ],
+    "draft": true
+   }
   },
   {
    "id": "111-96",
@@ -5620,7 +6155,22 @@
     "D": "第四型",
     "E": "第七型"
    },
-   "answer": "D"
+   "answer": "D",
+   "explanation": {
+    "quick": "**第四型黏多醣症（Morquio 症候群）**以骨骼病變為主，**智力保持正常**。",
+    "background": "Nelson 第 109 章：\n• **MPS IV（Morquio A/B）**：短軀幹侏儒、細微角膜混濁、特殊的骨骼發育不良（膝外翻、脊柱後凸、齒突發育不全致寰樞椎不穩定）、**智力保留**\n• MPS I（Hurler）：嚴重型有智能障礙、角膜混濁、肝脾腫大、心臟病變\n• MPS II（Hunter）：X 性聯，嚴重型有智能障礙，無角膜混濁\n• MPS III（Sanfilippo）：以**嚴重中樞神經退化**、行為問題為主，身體變化較輕\n• MPS VI（Maroteaux-Lamy）：智力正常（題目未列）\n• MPS VII（Sly）：可有智能障礙，嚴重者以胎兒水腫表現",
+    "options": {
+     "A": "會：嚴重型有智力受損。",
+     "B": "會：嚴重型有智力受損。",
+     "C": "會：以中樞神經退化為主。",
+     "D": "不會（本題答案）。",
+     "E": "會：常有智力受損。"
+    },
+    "sources": [
+     "Nelson Textbook of Pediatrics 22e：Ch.109 Mucopolysaccharidoses（p.939–943）"
+    ],
+    "draft": true
+   }
   },
   {
    "id": "111-97",
@@ -5636,7 +6186,22 @@
     "D": "平均壽命均為50-55歲",
     "E": "唐氏症的染色體為第21號染色體多出一個，其97%皆來自母源"
    },
-   "answer": "B"
+   "answer": "B",
+   "explanation": {
+    "quick": "唐氏症的智能障礙程度差異很大，**多為輕度到中度**，並非全為極重度。",
+    "background": "Nelson 第 57 章：\n• 第 21 號染色體多一條（約 95% 為游離型三體，多數來自母親減數分裂錯誤）\n• 活產發生率約 1/700–1/800\n• 臨床：**肌張力低下**、扁平臉、眼角上斜、內眥贅皮、單一手掌橫紋、第五指彎曲、草鞋腳\n• **智能障礙程度不一，多為輕度到中度**（IQ 約 35–70），部分接近邊緣\n• 合併先天性心臟病（房室中膈缺損）、十二指腸閉鎖、先天性巨結腸、甲狀腺疾病、白血病、早發性阿茲海默症\n• 平均壽命已顯著延長，目前約 60 歲",
+    "options": {
+     "A": "正確（依官方答案）。",
+     "B": "錯誤（本題答案）：多為輕度到中度。",
+     "C": "正確。",
+     "D": "正確（依官方答案）。",
+     "E": "正確。"
+    },
+    "sources": [
+     "Nelson Textbook of Pediatrics 22e：Ch.57 Down Syndrome and Other Abnormalities of Chromosome Number（p.363–368）"
+    ],
+    "draft": true
+   }
   },
   {
    "id": "111-98",
@@ -5652,7 +6217,22 @@
     "D": "Small genitalia；pubertal delay and insufficiency",
     "E": "Hypopigmentation for the family"
    },
-   "answer": "E"
+   "answer": "E",
+   "explanation": {
+    "quick": "「**皮膚色素比家人淡（hypopigmentation）**」在 Prader-Willi 共識診斷標準中屬於**次要標準**。",
+    "background": "Nelson Table 99.11（Prader-Willi 症候群共識診斷標準）：\n• **主要標準（各 1 分）**：新生兒或嬰兒期肌張力低下；嬰兒期餵食困難與生長遲滯；1–6 歲體重快速增加、肥胖、過食；特殊臉型；**小生殖器、青春期延遲或不足**；發展遲緩或智能障礙\n• **次要標準（各 0.5 分）**：胎動少、嬰兒期嗜睡；典型行為問題；睡眠呼吸中止；15 歲時相對家族矮小；**與家人相比色素較淡**；手腳相對身高較小；手窄、尺側緣平直；內斜視、近視；唾液黏稠；構音障礙；摳皮膚\n病因：15q11–q13 父源基因不表現（父源缺失、母源單親二體、印記缺陷）。",
+    "options": {
+     "A": "主要標準。",
+     "B": "主要標準。",
+     "C": "主要標準。",
+     "D": "主要標準。",
+     "E": "不是主要標準（本題答案）：屬次要標準。"
+    },
+    "sources": [
+     "Nelson Textbook of Pediatrics 22e：Ch.99 Chromosome Disorders，Table 99.11 Consensus Diagnostic Criteria for Prader-Willi Syndrome（p.775）"
+    ],
+    "draft": true
+   }
   },
   {
    "id": "111-99",
@@ -5668,7 +6248,23 @@
     "D": "Glycogen storage disease II",
     "E": "Duchenne muscular dystrophy"
    },
-   "answer": "B"
+   "answer": "B",
+   "explanation": {
+    "quick": "依官方答案為**脊髓性肌肉萎縮症（SMA）**：新生兒期以低張力、進食困難、活力差表現，血糖、乳酸與血氨正常；其他選項各有不符的特徵。",
+    "background": "本題以排除法判讀：\n• **SMA 第 1 型**（Nelson 第 652 章）：6 個月前發病的嚴重肌張力低下、下肢重於上肢的對稱無力、反射消失、舌頭肌束顫動，常有餵食與吞嚥困難；CK 可正常或輕度上升\n• **Prader-Willi 症候群**（第 99 章）：新生兒低張力與餵食困難，但通常有特殊外觀與小生殖器（男嬰常隱睪）\n• **肝醣儲積症 Ia**（第 107 章）：空腹**低血糖**、**乳酸中毒**、高尿酸、高血脂、肝腫大——本例血糖 92、乳酸 2.2，不符合\n• **龐貝氏症（GSD II）**：嬰兒型以**肥厚性心肌病變**、巨舌、肝腫大與 **CK 明顯升高**表現\n• **裘馨氏肌肉失養症**：新生兒期很少以低張力表現，CK 通常極高（數千到數萬）\n本例的代謝性酸中毒（HCO3 7）在題目中並未合併低血糖或乳酸上升，可能與進食差、脫水有關；這部分題意不夠清楚，依官方答案作答。",
+    "options": {
+     "A": "錯誤：通常有特殊外觀與小生殖器。",
+     "B": "正確（依官方答案）。",
+     "C": "錯誤：應有低血糖與乳酸中毒。",
+     "D": "錯誤：應有心肌病變與 CK 明顯上升。",
+     "E": "錯誤：新生兒期少見低張力，CK 會極高。"
+    },
+    "sources": [
+     "Nelson Textbook of Pediatrics 22e：Ch.652 Spinal Muscular Atrophies（p.3866）",
+     "Nelson Textbook of Pediatrics 22e：Ch.107 Defects in Metabolism of Carbohydrates（GSD I、Pompe，p.906）"
+    ],
+    "draft": true
+   }
   },
   {
    "id": "111-100",
@@ -5684,7 +6280,23 @@
     "D": "常規腎臟超音波及alpha-fetoprotein監測",
     "E": "補充生長激素以預防因其不足導致之低血糖"
    },
-   "answer": "D"
+   "answer": "D",
+   "explanation": {
+    "quick": "Beckwith-Wiedemann 症候群有較高的胚胎性腫瘤（**Wilms 腫瘤、肝母細胞瘤**）風險，需定期**腹部（腎臟）超音波與 AFP**追蹤。",
+    "background": "Nelson 第 598 章與第 553 章：\n• BWS：11p15 印記區的遺傳或表觀遺傳異常（多數為甲基化異常），IGF2 過度表現；發生率約 1/10,000\n• 表現：過度生長、巨舌、臍膨出、半側肥大、耳垂皺褶、內臟腫大；**新生兒低血糖**（高胰島素血症，多為暫時性）\n• 胚胎性腫瘤風險增加：**Wilms 腫瘤**最常見，其次為**肝母細胞瘤**、神經母細胞瘤、橫紋肌肉瘤\n• **所有 BWS 或半側肥大的兒童都應常規以 AFP 與腹部超音波篩檢**（肝母細胞瘤：AFP 約每 3 個月直到 4 歲；Wilms：腹部超音波每 3 個月直到約 7–8 歲）\n• 低血糖是高胰島素造成，不是生長激素不足；BWS 不需補充生長激素",
+    "options": {
+     "A": "錯誤：心肌病變不是 BWS 的主要問題。",
+     "B": "錯誤：BWS 不以低血鈣為主要問題。",
+     "C": "錯誤：不需常規腦波。",
+     "D": "正確。",
+     "E": "錯誤：低血糖是高胰島素造成，不是生長激素不足。"
+    },
+    "sources": [
+     "Nelson Textbook of Pediatrics 22e：Ch.598 Hyperpituitarism, Tall Stature, and Overgrowth Syndromes（BWS，p.3382）",
+     "Nelson Textbook of Pediatrics 22e：Ch.553 Neoplasms of the Liver（BWS 篩檢，p.3153）"
+    ],
+    "draft": true
+   }
   },
   {
    "id": "112-1",
