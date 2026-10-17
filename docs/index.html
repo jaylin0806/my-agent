@@ -38,6 +38,31 @@
     <button class="btn warn" id="resetBtn">重置進度</button>
   </div>
 
+  <details class="sync" id="sync">
+    <summary>📦 備份／換裝置繼續作答</summary>
+    <p class="hint">作答紀錄只存在這台裝置的瀏覽器裡。換手機或電腦前，先在這裡備份，到新裝置再匯入。</p>
+    <div class="sync-row">
+      <b>方法一：轉移碼</b>（適合手機，可用 LINE 或 Email 傳給自己）
+      <div class="ctrl">
+        <button class="btn" id="copyCodeBtn">複製轉移碼</button>
+      </div>
+      <textarea id="codeBox" rows="3" placeholder="在新裝置把轉移碼貼在這裡，再按「匯入轉移碼」" aria-label="轉移碼"></textarea>
+      <div class="ctrl">
+        <button class="btn" id="importCodeBtn">匯入轉移碼</button>
+      </div>
+    </div>
+    <div class="sync-row">
+      <b>方法二：備份檔</b>（適合電腦，可存到雲端硬碟或隨身碟）
+      <div class="ctrl">
+        <button class="btn" id="downloadBtn">下載備份檔</button>
+        <label class="btn" for="fileInput">選擇備份檔匯入</label>
+        <input type="file" id="fileInput" accept=".json,application/json" hidden>
+      </div>
+    </div>
+    <p class="hint">匯入時會和這台裝置現有的紀錄合併：同一題保留較新的作答，不會清掉原本的紀錄。</p>
+    <p id="syncMsg" class="sync-msg" role="status" aria-live="polite"></p>
+  </details>
+
   <div id="stats" class="stats"></div>
   <div id="count" class="count"></div>
   <main id="list"></main>
