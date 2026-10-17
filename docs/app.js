@@ -60,10 +60,149 @@ function saveProgress() {
   }
 }
 
+// ---------- 備份與匯入（換裝置時轉移作答紀錄） ----------
+
+// 轉移碼格式：QZ1|題庫id|資料，資料是「id,選項,1或0,時間(36進位秒)」以分號串接後再轉 base64
+const CODE_PREFIX = 'QZ1';
+
+function toBase64(str) {
+  const bytes = new TextEncoder().encode(str);
+  let bin = '';
+  for (let i = 0; i < bytes.length; i += 8192) bin += String.fromCharCode(...bytes.subarray(i, i + 8192));
+  return btoa(bin);
+}
+
+function fromBase64(b64) {
+  const bytes = Uint8Array.from(atob(b64), (c) => c.charCodeAt(0));
+  return new TextDecoder().decode(bytes);
+}
+
+function exportCode() {
+  const rows = Object.entries(state.progress).map(([id, p]) =>
+    [id, p.k, p.ok ? 1 : 0, Math.floor((p.t || 0) / 1000).toString(36)].join(','));
+  return [CODE_PREFIX, state.bank.id, toBase64(rows.join(';'))].join('|');
+}
+
+function parseCode(text) {
+  const parts = text.replace(/\s+/g, '').split('|');
+  if (parts.length !== 3 || parts[0] !== CODE_PREFIX) throw new Error('轉移碼格式不正確，請確認整段都有複製到');
+  const progress = {};
+  const raw = fromBase64(parts[2]);
+  if (raw) {
+    raw.split(';').forEach((row) => {
+      const [id, k, ok, t] = row.split(',');
+      if (id && k) progress[id] = { k, ok: ok === '1', t: parseInt(t, 36) * 1000 || 0 };
+    });
+  }
+  return { bank: parts[1], progress };
+}
+
+function parseFile(text) {
+  const data = JSON.parse(text);
+  if (!data || typeof data.progress !== 'object') throw new Error('這不是題庫的備份檔');
+  return { bank: data.bank, progress: data.progress };
+}
+
+// 合併：同一題保留時間較新的那筆；只接受目前題庫裡存在的題目
+function mergeProgress(incoming) {
+  if (incoming.bank && incoming.bank !== state.bank.id) {
+    throw new Error(`這份紀錄屬於另一個題庫（${incoming.bank}），請先切換到該題庫再匯入`);
+  }
+  const ids = new Set(state.bank.questions.map((q) => q.id));
+  let added = 0;
+  let updated = 0;
+  Object.entries(incoming.progress).forEach(([id, p]) => {
+    if (!ids.has(id) || !p || typeof p.k !== 'string') return;
+    const cur = state.progress[id];
+    const entry = { k: p.k, ok: !!p.ok, t: Number(p.t) || 0 };
+    if (!cur) { state.progress[id] = entry; added++; }
+    else if (entry.t > (cur.t || 0)) { state.progress[id] = entry; updated++; }
+  });
+  saveProgress();
+  render();
+  return { added, updated };
+}
+
+function syncMsg(text, bad) {
+  const el = $('#syncMsg');
+  el.textContent = text;
+  el.classList.toggle('bad', !!bad);
+}
+
+function doImport(parse, text) {
+  try {
+    const { added, updated } = mergeProgress(parse(text));
+    syncMsg(added || updated
+      ? `匯入完成：新增 ${added} 題、更新 ${updated} 題作答紀錄。`
+      : '匯入完成，但沒有新的紀錄（這台裝置的紀錄已經是最新的）。');
+  } catch (err) {
+    syncMsg('匯入失敗：' + (err instanceof SyntaxError || err.name === 'InvalidCharacterError'
+      ? '內容無法辨識，請確認轉移碼或檔案是否完整' : err.message), true);
+  }
+}
+
+async function copyText(text) {
+  try {
+    await navigator.clipboard.writeText(text);
+    return true;
+  } catch {
+    // 部分瀏覽器或嵌入環境不允許寫入剪貼簿，改用選取的方式
+    const box = $('#codeBox');
+    box.value = text;
+    box.focus();
+    box.select();
+    try { return document.execCommand('copy'); } catch { return false; }
+  }
+}
+
+function bindSync() {
+  $('#copyCodeBtn').onclick = async () => {
+    if (!state.bank) return;
+    const n = Object.keys(state.progress).length;
+    if (!n) { syncMsg('目前還沒有作答紀錄可以備份。', true); return; }
+    const ok = await copyText(exportCode());
+    syncMsg(ok
+      ? `已複製 ${n} 題的轉移碼。請貼到 LINE、Email 或備忘錄傳給自己，再到新裝置貼上匯入。`
+      : '無法自動複製，轉移碼已放在下方框內，請長按或全選後手動複製。', !ok);
+  };
+
+  $('#importCodeBtn').onclick = () => {
+    if (!state.bank) return;
+    const text = $('#codeBox').value.trim();
+    if (!text) { syncMsg('請先把轉移碼貼到框內。', true); return; }
+    doImport(parseCode, text);
+  };
+
+  $('#downloadBtn').onclick = () => {
+    if (!state.bank) return;
+    const n = Object.keys(state.progress).length;
+    if (!n) { syncMsg('目前還沒有作答紀錄可以備份。', true); return; }
+    const data = { app: 'quiz-backup', version: 1, bank: state.bank.id, exportedAt: new Date().toISOString(), progress: state.progress };
+    const blob = new Blob([JSON.stringify(data)], { type: 'application/json' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = `quiz-backup-${state.bank.id}-${new Date().toISOString().slice(0, 10)}.json`;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+    syncMsg(`已下載 ${n} 題的備份檔。到新裝置按「選擇備份檔匯入」即可。`);
+  };
+
+  $('#fileInput').onchange = function () {
+    const file = this.files[0];
+    if (!file || !state.bank) return;
+    file.text().then((text) => doImport(parseFile, text))
+      .catch(() => syncMsg('匯入失敗：無法讀取檔案', true))
+      .finally(() => { this.value = ''; });
+  };
+}
+
 // ---------- 初始化 ----------
 
 async function init() {
   bindControls();
+  bindSync();
   try {
     const cfg = await loadJSON('data/banks.json');
     document.title = cfg.title || document.title;

@@ -183,3 +183,29 @@ img.fig.big { max-width: none; cursor: zoom-out; }
   .hd h1 { font-size: 1.25rem; }
   .ctrl select, .ctrl input { flex: 1 1 100%; }
 }
+
+.sync {
+  max-width: 640px;
+  margin: 4px auto 12px;
+  padding: 8px 14px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--card);
+}
+.sync summary { cursor: pointer; text-align: center; color: var(--accent); font-weight: 600; }
+.sync .hint { color: var(--muted); font-size: .85rem; margin: 8px 0; }
+.sync-row { margin: 10px 0; font-size: .92rem; }
+.sync textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 7px 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--text);
+  font: .8rem/1.4 ui-monospace, monospace;
+  word-break: break-all;
+}
+.sync label.btn { display: inline-block; }
+.sync-msg { min-height: 1.2em; margin: 6px 0 2px; font-size: .88rem; color: var(--ok); text-align: center; }
+.sync-msg.bad { color: var(--bad); }
